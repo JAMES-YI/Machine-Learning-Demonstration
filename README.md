@@ -11,6 +11,12 @@ use histogram methods to estimate probability distribution, and design Bayes cla
 
 (3) demo_3.m, design a Bayes classifier and a logistic classifier for two dimensional binary classification task
 
+(4) demo_4.m, design a perceptron for classifying MNIST digit; visualize perceptron parameters
+
+(5) demo_5.m, demonstrate the basic idea of SVM; solve a two dimensional binary classification problem using SVM; show the values of dual variables; demonstrate the separating plane and supporting vectors
+
+(6) demo_6.m, solving two dimensional binary classification problem with SVM (built-in functions in MATLAB); demonstrate the performance of SVMs using different kernels; 
+
 
 
 
