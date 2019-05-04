@@ -11,7 +11,7 @@
 % 
 % Specifically, determine the maximum likelihood estimates of the parameters of the likelihood distributions ?_1,?_2,?_1 and ?_2for each dataset.
 % (b) With these estimates, plot the Bayes classifier.
-% (c) Assuming the two classes are equiprobable (i.e., p(?_1 )= p(?_2) = ½), 
+% (c) Assuming the two classes are equiprobable (i.e., p(?_1 )= p(?_2) = Â½), 
 %     determine the minimum error classification rule in each case (100 samples and 10000 samples). 
 %     Specifically, determine the decision regions R_1 and R_2.
 % (d) Estimate the probability distributions using the histogram approach (use hist in MATLAB) for each of the datasets. 
@@ -114,7 +114,7 @@ normal_term_2 = 1/(2*sigma10k_2^2) * (x-mu10k_2).^2;
 normal_term_1 = 1/(2*sigma10k_1^2) * (x-mu10k_1).^2;
 g10k_x = log_term + normal_term_2 - normal_term_1; % theoretical
 
-log_term = log(sigma10k_2/sigma10k_1);
+log_term = log(sigma10k_2/sigma10k_1); 
 normal_term_2 = 1/(2*sigma10k_2^2) * (len_b10k-mu10k_2).^2;
 normal_term_1 = 1/(2*sigma10k_1^2) * (len_b10k-mu10k_1).^2;
 g_b10k = log_term + normal_term_2 - normal_term_1;
