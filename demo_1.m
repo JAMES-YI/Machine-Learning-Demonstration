@@ -1,4 +1,9 @@
-%% This file is 
+%% This file is to 
+% (1) demonstrate how regularization parameters will affect machine learning models 
+% (both the case where a single data set is considered, and the case where multiply data set are considered); 
+% demonstrate how the regularization parameters will affect the bias of estimation of machine learning models; 
+% demonstrate the bias and variance tradeoff; demonstrate the MSE behavior with respect to regularization parameter; 
+% demonstrate how the noise and the size of training data set will affect the performance of machine learning models
 % By JYI on 09/17/2018, jirong-yi@uiowa.edu
 
 rng(1);
