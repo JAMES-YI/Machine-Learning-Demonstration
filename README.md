@@ -9,6 +9,8 @@ The following are included.
 design of Bayesian classifier; design of minimum error classification; demonstrate of decision regions; 
 use histogram methods to estimate probability distribution, and design Bayes classifier and minimum error classifier
 
+(3) demo_3.m, design a Bayes classifier and a logistic classifier for two dimensional binary classification task.
+
 
 
 
