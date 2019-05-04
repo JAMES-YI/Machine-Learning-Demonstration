@@ -2,19 +2,22 @@
 
 % Consider the problem of estimating the real value parameter w from the dataset Dl with N points
 % y_i=w+ n_i;i=1,2,…,N.
-% Here n_i's (i = 1, 2, …, N) are identical independently distributed zero-mean Gaussian noise samples of variance σ^2. In this coding assignment, you are asked to analyze the performance of the following regularized estimate, specified by 
+% Here n_i's (i = 1, 2, …, N) are identical independently distributed zero-mean Gaussian noise samples of variance σ^2. 
+% In this coding assignment, you are asked to analyze the performance of the following regularized estimate, specified by 
 % w ̂_λ="arg" 〖" min" 〗_w ∑_(i=1)^N▒〖〖|y_i-w|〗^2+λw^2 〗.
-% In fact, w ̂_λ is a biased estimate, with w ̂_λ=(∑_(i=1)^N▒y_i )/(N+λ). In your MATLAB simulations, assume that w = 0.04 and σ^2=0.1							(8*6 points)
+% In fact, w ̂_λ is a biased estimate, with w ̂_λ=(∑_(i=1)^N▒y_i )/(N+λ). In your MATLAB simulations, 
+% assume that w = 0.04 and σ^2=0.1						
 
 % (a) In MATLAB, create a specific dataset Dl = {yi | i = 1, 2, … 100}. Note that y_i=w+ n_i for each i = 1, 2, … 100.
-% (b) Define a discretized grid of λ ∈[0,500]and plot the estimate w ̂_λ. Also compute the error for this specific dataset Dl
+% (b) Define a discretized grid of λ ∈[0,500]and plot the estimate w ̂_λ. 
+% Also compute the error for this specific dataset Dl
 % E_l (λ)=〖|w ̂_λ (D_l )-w|〗^2
 % (c) Plot the mean square error specified by
 % "MSE" (λ)= E[〖|w ̂_λ (D)-w|〗^2 ]   
-% as a function of λ. You can approximate the expectation (E(┤) operator in the above equation) by an average, that is, to approximate the MSE as 
-% "MSE(λ) ≈"  1/L ∑_(l=1)^L▒〖E_l (λ) 〗,
-% where L = 100. Specifically, generate L datasets Dl (l = 1, 2, …, L), compute the errors and the average. Plot MSE(λ) v.s. λ.
-
+% as a function of λ. You can approximate the expectation (E(┤) operator in the above equation) by an average, that is, 
+% to approximate the MSE as "MSE(λ) ≈"  1/L ∑_(l=1)^L▒〖E_l (λ) 〗,
+% where L = 100. Specifically, generate L datasets Dl (l = 1, 2, …, L), compute the errors and the average. 
+% Plot MSE(λ) v.s. λ.
 % (d) Calculate the bias estimate as 
 % Bias^2 (λ)=〖|w- E[w ̂_λ (D)]|〗^2
 % and plot over the above graph. Similar to the previous case, approximate the expectation operator as 
@@ -22,7 +25,8 @@
 % (e) Calculate the variance estimate as 
 % "Variance(λ) =" E[〖〖|w ̂〗_λ (D)- E[w ̂_λ (D)]|〗^2 ]
 % and plot over the above graph.
-% (f) Analytically it can be shown that the minimum MSE is obtained when λ^*=σ^2/w^2 . Verify this with your MATLAB simulations for different values of σ,N,"and" w.
+% (f) Analytically it can be shown that the minimum MSE is obtained when λ^*=σ^2/w^2 . 
+% Verify this with your MATLAB simulations for different values of σ,N,"and" w.
 % (g) Challenge (optional): Show analytically that the minimum MSE is obtained when λ^*=σ^2/w^2 .
 %
 % By JYI on 09/17/2018, jirong-yi@uiowa.edu
