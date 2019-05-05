@@ -15,7 +15,15 @@ use histogram methods to estimate probability distribution, and design Bayes cla
 
 (5) demo_5.m, demonstrate the basic idea of SVM; solve a two dimensional binary classification problem using SVM; show the values of dual variables; demonstrate the separating plane and supporting vectors
 
-(6) demo_6.m, solving two dimensional binary classification problem with SVM (built-in functions in MATLAB); demonstrate the performance of SVMs using different kernels; 
+(6) demo_6.m, solving two dimensional binary classification problem with SVM (built-in functions in MATLAB); demonstrate the performance of SVMs using different kernels
+
+(7) demo_7.m, solve a two dimensional binary classification via neural network; demonstrate the implementaiton of back propagation algorithm for training
+
+(8) demo_8.m, demonstrate the distribution of data samples in hidden layers at different iterations; demonstrate the behavior of decision regions at different iterations
+
+(9) demo_9.m, calculate the gradient of loss function with respect to neural network parameters via finite difference method
+
+(10) ...
 
 
 
